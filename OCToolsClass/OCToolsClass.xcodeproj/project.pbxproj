@@ -17,6 +17,8 @@
 		F186E69726D4CFB700461757 /* OCToolsClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E69626D4CFB700461757 /* OCToolsClassTests.m */; };
 		F186E6A226D4CFB700461757 /* OCToolsClassUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6A126D4CFB700461757 /* OCToolsClassUITests.m */; };
 		F186E6BD26D4D6A400461757 /* HMAdapterLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6BC26D4D6A400461757 /* HMAdapterLayout.m */; };
+		F186E6C926D4D7C400461757 /* UIImage+HMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6C726D4D7C400461757 /* UIImage+HMCategory.m */; };
+		F186E6CA26D4D7C400461757 /* NSString+HMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6C826D4D7C400461757 /* NSString+HMCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		F186E6A326D4CFB700461757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F186E6BB26D4D6A400461757 /* HMAdapterLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAdapterLayout.h; sourceTree = "<group>"; };
 		F186E6BC26D4D6A400461757 /* HMAdapterLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMAdapterLayout.m; sourceTree = "<group>"; };
+		F186E6C526D4D7C400461757 /* NSString+HMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HMCategory.h"; sourceTree = "<group>"; };
+		F186E6C626D4D7C400461757 /* UIImage+HMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HMCategory.h"; sourceTree = "<group>"; };
+		F186E6C726D4D7C400461757 /* UIImage+HMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HMCategory.m"; sourceTree = "<group>"; };
+		F186E6C826D4D7C400461757 /* NSString+HMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HMCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,7 @@
 		F186E6B826D4D25200461757 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F186E6C426D4D7C300461757 /* Category */,
 				F186E6BA26D4D32100461757 /* Adapter */,
 			);
 			path = Tools;
@@ -164,6 +171,17 @@
 				F186E6BC26D4D6A400461757 /* HMAdapterLayout.m */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		F186E6C426D4D7C300461757 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F186E6C526D4D7C400461757 /* NSString+HMCategory.h */,
+				F186E6C826D4D7C400461757 /* NSString+HMCategory.m */,
+				F186E6C726D4D7C400461757 /* UIImage+HMCategory.m */,
+				F186E6C626D4D7C400461757 /* UIImage+HMCategory.h */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +315,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F186E6C926D4D7C400461757 /* UIImage+HMCategory.m in Sources */,
+				F186E6CA26D4D7C400461757 /* NSString+HMCategory.m in Sources */,
 				F186E68226D4CFAB00461757 /* ViewController.m in Sources */,
 				F186E67C26D4CFAB00461757 /* AppDelegate.m in Sources */,
 				F186E68D26D4CFB600461757 /* main.m in Sources */,
