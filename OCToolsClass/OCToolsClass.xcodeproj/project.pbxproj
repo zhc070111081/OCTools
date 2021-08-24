@@ -21,6 +21,7 @@
 		F186E6CA26D4D7C400461757 /* NSString+HMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6C826D4D7C400461757 /* NSString+HMCategory.m */; };
 		F186E6D126D4D81C00461757 /* HMKeychainService.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6CF26D4D81C00461757 /* HMKeychainService.m */; };
 		F186E6DB26D4D84E00461757 /* HMLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6D926D4D84E00461757 /* HMLogManager.m */; };
+		F186E6E426D4D88F00461757 /* HMWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6E326D4D88E00461757 /* HMWaterFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		F186E6D926D4D84E00461757 /* HMLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLogManager.m; sourceTree = "<group>"; };
 		F186E6DA26D4D84E00461757 /* HMLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLogManager.h; sourceTree = "<group>"; };
 		F186E6E026D4D86F00461757 /* HMSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
+		F186E6E226D4D88E00461757 /* HMWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMWaterFlowLayout.h; sourceTree = "<group>"; };
+		F186E6E326D4D88E00461757 /* HMWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMWaterFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,7 @@
 		F186E6B826D4D25200461757 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F186E6E126D4D88E00461757 /* WaterFlowLayout */,
 				F186E6DF26D4D86F00461757 /* Singleton */,
 				F186E6D826D4D84E00461757 /* Log */,
 				F186E6CE26D4D81C00461757 /* KeyChain */,
@@ -218,6 +222,15 @@
 				F186E6E026D4D86F00461757 /* HMSingleton.h */,
 			);
 			path = Singleton;
+			sourceTree = "<group>";
+		};
+		F186E6E126D4D88E00461757 /* WaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F186E6E226D4D88E00461757 /* HMWaterFlowLayout.h */,
+				F186E6E326D4D88E00461757 /* HMWaterFlowLayout.m */,
+			);
+			path = WaterFlowLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +366,7 @@
 			files = (
 				F186E6D126D4D81C00461757 /* HMKeychainService.m in Sources */,
 				F186E6C926D4D7C400461757 /* UIImage+HMCategory.m in Sources */,
+				F186E6E426D4D88F00461757 /* HMWaterFlowLayout.m in Sources */,
 				F186E6CA26D4D7C400461757 /* NSString+HMCategory.m in Sources */,
 				F186E68226D4CFAB00461757 /* ViewController.m in Sources */,
 				F186E67C26D4CFAB00461757 /* AppDelegate.m in Sources */,
