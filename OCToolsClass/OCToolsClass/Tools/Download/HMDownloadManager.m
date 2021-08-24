@@ -7,6 +7,10 @@
 
 #import "HMDownloadManager.h"
 
+@interface HMDownloadManager ()
+
+@end
+
 @implementation HMDownloadManager
 
 @end

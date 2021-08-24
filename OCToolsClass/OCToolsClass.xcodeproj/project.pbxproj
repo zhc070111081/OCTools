@@ -225,8 +225,8 @@
 		F186E6D826D4D84E00461757 /* Log */ = {
 			isa = PBXGroup;
 			children = (
-				F186E6D926D4D84E00461757 /* HMLogManager.m */,
 				F186E6DA26D4D84E00461757 /* HMLogManager.h */,
+				F186E6D926D4D84E00461757 /* HMLogManager.m */,
 			);
 			path = Log;
 			sourceTree = "<group>";
@@ -252,8 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				F186E6E926D4D8CB00461757 /* HMDrawBezierPath.h */,
-				F186E6EA26D4D8CB00461757 /* HMDrawBoardView.h */,
 				F186E6EB26D4D8CB00461757 /* HMDrawBezierPath.m */,
+				F186E6EA26D4D8CB00461757 /* HMDrawBoardView.h */,
 				F186E6EC26D4D8CB00461757 /* HMDrawBoardView.m */,
 			);
 			path = DrawingBoard;
