@@ -16,6 +16,7 @@
 		F186E68D26D4CFB600461757 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E68C26D4CFB600461757 /* main.m */; };
 		F186E69726D4CFB700461757 /* OCToolsClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E69626D4CFB700461757 /* OCToolsClassTests.m */; };
 		F186E6A226D4CFB700461757 /* OCToolsClassUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6A126D4CFB700461757 /* OCToolsClassUITests.m */; };
+		F186E6BD26D4D6A400461757 /* HMAdapterLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6BC26D4D6A400461757 /* HMAdapterLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		F186E69D26D4CFB700461757 /* OCToolsClassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCToolsClassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F186E6A126D4CFB700461757 /* OCToolsClassUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCToolsClassUITests.m; sourceTree = "<group>"; };
 		F186E6A326D4CFB700461757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F186E6BB26D4D6A400461757 /* HMAdapterLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAdapterLayout.h; sourceTree = "<group>"; };
+		F186E6BC26D4D6A400461757 /* HMAdapterLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMAdapterLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 		F186E67926D4CFAB00461757 /* OCToolsClass */ = {
 			isa = PBXGroup;
 			children = (
+				F186E6B926D4D26700461757 /* Example */,
+				F186E6B826D4D25200461757 /* Tools */,
 				F186E67A26D4CFAB00461757 /* AppDelegate.h */,
 				F186E67B26D4CFAB00461757 /* AppDelegate.m */,
 				F186E67D26D4CFAB00461757 /* SceneDelegate.h */,
@@ -135,6 +140,30 @@
 				F186E6A326D4CFB700461757 /* Info.plist */,
 			);
 			path = OCToolsClassUITests;
+			sourceTree = "<group>";
+		};
+		F186E6B826D4D25200461757 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F186E6BA26D4D32100461757 /* Adapter */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F186E6B926D4D26700461757 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		F186E6BA26D4D32100461757 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				F186E6BB26D4D6A400461757 /* HMAdapterLayout.h */,
+				F186E6BC26D4D6A400461757 /* HMAdapterLayout.m */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +228,9 @@
 		F186E66F26D4CFAB00461757 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HM;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					F186E67626D4CFAB00461757 = {
 						CreatedOnToolsVersion = 12.4;
@@ -270,6 +301,7 @@
 				F186E67C26D4CFAB00461757 /* AppDelegate.m in Sources */,
 				F186E68D26D4CFB600461757 /* main.m in Sources */,
 				F186E67F26D4CFAB00461757 /* SceneDelegate.m in Sources */,
+				F186E6BD26D4D6A400461757 /* HMAdapterLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
