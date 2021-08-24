@@ -22,6 +22,9 @@
 		F186E6D126D4D81C00461757 /* HMKeychainService.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6CF26D4D81C00461757 /* HMKeychainService.m */; };
 		F186E6DB26D4D84E00461757 /* HMLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6D926D4D84E00461757 /* HMLogManager.m */; };
 		F186E6E426D4D88F00461757 /* HMWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6E326D4D88E00461757 /* HMWaterFlowLayout.m */; };
+		F186E6F026D4D8CB00461757 /* HMDrawBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6EB26D4D8CB00461757 /* HMDrawBezierPath.m */; };
+		F186E6F126D4D8CB00461757 /* HMDrawBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6EC26D4D8CB00461757 /* HMDrawBoardView.m */; };
+		F186E6F226D4D8CB00461757 /* HMLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6EF26D4D8CB00461757 /* HMLockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,12 @@
 		F186E6E026D4D86F00461757 /* HMSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
 		F186E6E226D4D88E00461757 /* HMWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMWaterFlowLayout.h; sourceTree = "<group>"; };
 		F186E6E326D4D88E00461757 /* HMWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMWaterFlowLayout.m; sourceTree = "<group>"; };
+		F186E6E926D4D8CB00461757 /* HMDrawBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMDrawBezierPath.h; sourceTree = "<group>"; };
+		F186E6EA26D4D8CB00461757 /* HMDrawBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMDrawBoardView.h; sourceTree = "<group>"; };
+		F186E6EB26D4D8CB00461757 /* HMDrawBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMDrawBezierPath.m; sourceTree = "<group>"; };
+		F186E6EC26D4D8CB00461757 /* HMDrawBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMDrawBoardView.m; sourceTree = "<group>"; };
+		F186E6EE26D4D8CB00461757 /* HMLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLockView.h; sourceTree = "<group>"; };
+		F186E6EF26D4D8CB00461757 /* HMLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLockView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +170,8 @@
 		F186E6B826D4D25200461757 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F186E6E826D4D8CB00461757 /* DrawingBoard */,
+				F186E6ED26D4D8CB00461757 /* GestureUnLock */,
 				F186E6E126D4D88E00461757 /* WaterFlowLayout */,
 				F186E6DF26D4D86F00461757 /* Singleton */,
 				F186E6D826D4D84E00461757 /* Log */,
@@ -231,6 +242,26 @@
 				F186E6E326D4D88E00461757 /* HMWaterFlowLayout.m */,
 			);
 			path = WaterFlowLayout;
+			sourceTree = "<group>";
+		};
+		F186E6E826D4D8CB00461757 /* DrawingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F186E6E926D4D8CB00461757 /* HMDrawBezierPath.h */,
+				F186E6EA26D4D8CB00461757 /* HMDrawBoardView.h */,
+				F186E6EB26D4D8CB00461757 /* HMDrawBezierPath.m */,
+				F186E6EC26D4D8CB00461757 /* HMDrawBoardView.m */,
+			);
+			path = DrawingBoard;
+			sourceTree = "<group>";
+		};
+		F186E6ED26D4D8CB00461757 /* GestureUnLock */ = {
+			isa = PBXGroup;
+			children = (
+				F186E6EE26D4D8CB00461757 /* HMLockView.h */,
+				F186E6EF26D4D8CB00461757 /* HMLockView.m */,
+			);
+			path = GestureUnLock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +396,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F186E6D126D4D81C00461757 /* HMKeychainService.m in Sources */,
+				F186E6F026D4D8CB00461757 /* HMDrawBezierPath.m in Sources */,
+				F186E6F126D4D8CB00461757 /* HMDrawBoardView.m in Sources */,
 				F186E6C926D4D7C400461757 /* UIImage+HMCategory.m in Sources */,
 				F186E6E426D4D88F00461757 /* HMWaterFlowLayout.m in Sources */,
 				F186E6CA26D4D7C400461757 /* NSString+HMCategory.m in Sources */,
@@ -373,6 +406,7 @@
 				F186E68D26D4CFB600461757 /* main.m in Sources */,
 				F186E6DB26D4D84E00461757 /* HMLogManager.m in Sources */,
 				F186E67F26D4CFAB00461757 /* SceneDelegate.m in Sources */,
+				F186E6F226D4D8CB00461757 /* HMLockView.m in Sources */,
 				F186E6BD26D4D6A400461757 /* HMAdapterLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
