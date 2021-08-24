@@ -69,6 +69,7 @@
 		F186E6D026D4D81C00461757 /* HMKeychainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMKeychainService.h; sourceTree = "<group>"; };
 		F186E6D926D4D84E00461757 /* HMLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLogManager.m; sourceTree = "<group>"; };
 		F186E6DA26D4D84E00461757 /* HMLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLogManager.h; sourceTree = "<group>"; };
+		F186E6E026D4D86F00461757 /* HMSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +158,7 @@
 		F186E6B826D4D25200461757 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F186E6DF26D4D86F00461757 /* Singleton */,
 				F186E6D826D4D84E00461757 /* Log */,
 				F186E6CE26D4D81C00461757 /* KeyChain */,
 				F186E6C426D4D7C300461757 /* Category */,
@@ -208,6 +210,14 @@
 				F186E6DA26D4D84E00461757 /* HMLogManager.h */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		F186E6DF26D4D86F00461757 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				F186E6E026D4D86F00461757 /* HMSingleton.h */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
