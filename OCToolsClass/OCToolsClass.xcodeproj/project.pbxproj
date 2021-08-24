@@ -25,6 +25,7 @@
 		F186E6F026D4D8CB00461757 /* HMDrawBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6EB26D4D8CB00461757 /* HMDrawBezierPath.m */; };
 		F186E6F126D4D8CB00461757 /* HMDrawBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6EC26D4D8CB00461757 /* HMDrawBoardView.m */; };
 		F186E6F226D4D8CB00461757 /* HMLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6EF26D4D8CB00461757 /* HMLockView.m */; };
+		F186E6F926D4D94B00461757 /* HMDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6F826D4D94B00461757 /* HMDownloadManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		F186E6EC26D4D8CB00461757 /* HMDrawBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMDrawBoardView.m; sourceTree = "<group>"; };
 		F186E6EE26D4D8CB00461757 /* HMLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLockView.h; sourceTree = "<group>"; };
 		F186E6EF26D4D8CB00461757 /* HMLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLockView.m; sourceTree = "<group>"; };
+		F186E6F726D4D94B00461757 /* HMDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMDownloadManager.h; sourceTree = "<group>"; };
+		F186E6F826D4D94B00461757 /* HMDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMDownloadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,7 @@
 		F186E6B826D4D25200461757 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F186E6F626D4D93800461757 /* Download */,
 				F186E6E826D4D8CB00461757 /* DrawingBoard */,
 				F186E6ED26D4D8CB00461757 /* GestureUnLock */,
 				F186E6E126D4D88E00461757 /* WaterFlowLayout */,
@@ -262,6 +266,15 @@
 				F186E6EF26D4D8CB00461757 /* HMLockView.m */,
 			);
 			path = GestureUnLock;
+			sourceTree = "<group>";
+		};
+		F186E6F626D4D93800461757 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				F186E6F726D4D94B00461757 /* HMDownloadManager.h */,
+				F186E6F826D4D94B00461757 /* HMDownloadManager.m */,
+			);
+			path = Download;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,6 +410,7 @@
 			files = (
 				F186E6D126D4D81C00461757 /* HMKeychainService.m in Sources */,
 				F186E6F026D4D8CB00461757 /* HMDrawBezierPath.m in Sources */,
+				F186E6F926D4D94B00461757 /* HMDownloadManager.m in Sources */,
 				F186E6F126D4D8CB00461757 /* HMDrawBoardView.m in Sources */,
 				F186E6C926D4D7C400461757 /* UIImage+HMCategory.m in Sources */,
 				F186E6E426D4D88F00461757 /* HMWaterFlowLayout.m in Sources */,
