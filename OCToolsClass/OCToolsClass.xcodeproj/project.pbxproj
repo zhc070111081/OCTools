@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F184254226D7668400DD5084 /* HMUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F184254126D7668400DD5084 /* HMUncaughtExceptionHandler.m */; };
+		F184254D26D766DC00DD5084 /* HMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F184254C26D766DC00DD5084 /* HMNavigationController.m */; };
 		F186E67C26D4CFAB00461757 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E67B26D4CFAB00461757 /* AppDelegate.m */; };
 		F186E67F26D4CFAB00461757 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E67E26D4CFAB00461757 /* SceneDelegate.m */; };
 		F186E68226D4CFAB00461757 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E68126D4CFAB00461757 /* ViewController.m */; };
@@ -46,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F184254026D7668400DD5084 /* HMUncaughtExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMUncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		F184254126D7668400DD5084 /* HMUncaughtExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		F184254B26D766DC00DD5084 /* HMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMNavigationController.h; sourceTree = "<group>"; };
+		F184254C26D766DC00DD5084 /* HMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMNavigationController.m; sourceTree = "<group>"; };
 		F186E67726D4CFAB00461757 /* OCToolsClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCToolsClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F186E67A26D4CFAB00461757 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F186E67B26D4CFAB00461757 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +118,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F184253F26D7665500DD5084 /* ExceptionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				F184254026D7668400DD5084 /* HMUncaughtExceptionHandler.h */,
+				F184254126D7668400DD5084 /* HMUncaughtExceptionHandler.m */,
+			);
+			path = ExceptionHandler;
+			sourceTree = "<group>";
+		};
+		F184254926D766AC00DD5084 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F184254B26D766DC00DD5084 /* HMNavigationController.h */,
+				F184254C26D766DC00DD5084 /* HMNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		F186E66E26D4CFAB00461757 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +197,8 @@
 		F186E6B826D4D25200461757 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F184254926D766AC00DD5084 /* Navigation */,
+				F184253F26D7665500DD5084 /* ExceptionHandler */,
 				F186E6F626D4D93800461757 /* Download */,
 				F186E6E826D4D8CB00461757 /* DrawingBoard */,
 				F186E6ED26D4D8CB00461757 /* GestureUnLock */,
@@ -409,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F186E6D126D4D81C00461757 /* HMKeychainService.m in Sources */,
+				F184254226D7668400DD5084 /* HMUncaughtExceptionHandler.m in Sources */,
 				F186E6F026D4D8CB00461757 /* HMDrawBezierPath.m in Sources */,
 				F186E6F926D4D94B00461757 /* HMDownloadManager.m in Sources */,
 				F186E6F126D4D8CB00461757 /* HMDrawBoardView.m in Sources */,
@@ -419,6 +446,7 @@
 				F186E67C26D4CFAB00461757 /* AppDelegate.m in Sources */,
 				F186E68D26D4CFB600461757 /* main.m in Sources */,
 				F186E6DB26D4D84E00461757 /* HMLogManager.m in Sources */,
+				F184254D26D766DC00DD5084 /* HMNavigationController.m in Sources */,
 				F186E67F26D4CFAB00461757 /* SceneDelegate.m in Sources */,
 				F186E6F226D4D8CB00461757 /* HMLockView.m in Sources */,
 				F186E6BD26D4D6A400461757 /* HMAdapterLayout.m in Sources */,
