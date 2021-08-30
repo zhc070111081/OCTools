@@ -70,7 +70,7 @@
     return NO;
 }
 
-+ (id)readData:(NSString *)identifier {
++ (id)readData:(NSString *)identifier resultClass:(nullable Class)cls {
     id object = nil;
     
     // 通过标记获取数据查询条件
@@ -91,7 +91,8 @@
     if (SecItemCopyMatching((CFDictionaryRef)keyChainReadQueryMutableDictionary, (CFTypeRef *)&keyChainData) == noErr) {
         @try {
             if (@available(iOS 12.0, *)) {
-                object = [NSKeyedUnarchiver unarchivedObjectOfClass:[NSString class] fromData:(__bridge NSData *)(keyChainData) error:nil];
+                if (cls == nil) cls = [NSString class];
+                object = [NSKeyedUnarchiver unarchivedObjectOfClass:cls fromData:(__bridge NSData *)(keyChainData) error:nil];
             } else {
                 object = [NSKeyedUnarchiver unarchiveObjectWithData:(__bridge NSData *)(keyChainData)];
             }

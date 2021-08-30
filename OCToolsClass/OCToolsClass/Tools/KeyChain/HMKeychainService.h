@@ -22,8 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  读取数据
  @param identifier 存储数据的标识
+ @param cls 返回结果的数据类型 默认NSString iOS12.0 必须使用
  */
-+ (nullable id)readData:(nullable NSString *)identifier;
++ (nullable id)readData:(nullable NSString *)identifier resultClass:(nullable Class)cls;
 
 /*!
  更新数据
