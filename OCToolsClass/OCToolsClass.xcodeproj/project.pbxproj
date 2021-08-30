@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F16AFBBA26DCD21D00AF6E45 /* HMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AFBB926DCD21D00AF6E45 /* HMNetworkManager.m */; };
 		F184254226D7668400DD5084 /* HMUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F184254126D7668400DD5084 /* HMUncaughtExceptionHandler.m */; };
 		F184254D26D766DC00DD5084 /* HMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F184254C26D766DC00DD5084 /* HMNavigationController.m */; };
 		F186E67C26D4CFAB00461757 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E67B26D4CFAB00461757 /* AppDelegate.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F16AFBB826DCD21D00AF6E45 /* HMNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMNetworkManager.h; sourceTree = "<group>"; };
+		F16AFBB926DCD21D00AF6E45 /* HMNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMNetworkManager.m; sourceTree = "<group>"; };
 		F184254026D7668400DD5084 /* HMUncaughtExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		F184254126D7668400DD5084 /* HMUncaughtExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMUncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		F184254B26D766DC00DD5084 /* HMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMNavigationController.h; sourceTree = "<group>"; };
@@ -118,6 +121,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F16AFBB726DCD1DD00AF6E45 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F16AFBB826DCD21D00AF6E45 /* HMNetworkManager.h */,
+				F16AFBB926DCD21D00AF6E45 /* HMNetworkManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F16AFBBE26DCD22400AF6E45 /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
 		F184253F26D7665500DD5084 /* ExceptionHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +216,8 @@
 		F186E6B826D4D25200461757 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F16AFBBE26DCD22400AF6E45 /* ToastView */,
+				F16AFBB726DCD1DD00AF6E45 /* Network */,
 				F184254926D766AC00DD5084 /* Navigation */,
 				F184253F26D7665500DD5084 /* ExceptionHandler */,
 				F186E6F626D4D93800461757 /* Download */,
@@ -437,6 +458,7 @@
 				F186E6D126D4D81C00461757 /* HMKeychainService.m in Sources */,
 				F184254226D7668400DD5084 /* HMUncaughtExceptionHandler.m in Sources */,
 				F186E6F026D4D8CB00461757 /* HMDrawBezierPath.m in Sources */,
+				F16AFBBA26DCD21D00AF6E45 /* HMNetworkManager.m in Sources */,
 				F186E6F926D4D94B00461757 /* HMDownloadManager.m in Sources */,
 				F186E6F126D4D8CB00461757 /* HMDrawBoardView.m in Sources */,
 				F186E6C926D4D7C400461757 /* UIImage+HMCategory.m in Sources */,
