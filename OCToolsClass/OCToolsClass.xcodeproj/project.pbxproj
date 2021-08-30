@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F16AFBBA26DCD21D00AF6E45 /* HMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AFBB926DCD21D00AF6E45 /* HMNetworkManager.m */; };
+		F16AFBD426DCD97000AF6E45 /* HMToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AFBD326DCD97000AF6E45 /* HMToastView.m */; };
+		F16AFBDD26DCD98C00AF6E45 /* HMWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AFBDC26DCD98C00AF6E45 /* HMWebView.m */; };
+		F16AFBE326DCD9BA00AF6E45 /* HMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AFBE226DCD9BA00AF6E45 /* HMConst.m */; };
 		F184254226D7668400DD5084 /* HMUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F184254126D7668400DD5084 /* HMUncaughtExceptionHandler.m */; };
 		F184254D26D766DC00DD5084 /* HMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F184254C26D766DC00DD5084 /* HMNavigationController.m */; };
 		F186E67C26D4CFAB00461757 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E67B26D4CFAB00461757 /* AppDelegate.m */; };
@@ -52,6 +55,12 @@
 		F16AFBB826DCD21D00AF6E45 /* HMNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMNetworkManager.h; sourceTree = "<group>"; };
 		F16AFBB926DCD21D00AF6E45 /* HMNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMNetworkManager.m; sourceTree = "<group>"; };
 		F16AFBCD26DCD73B00AF6E45 /* HMCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMCommonHeader.h; sourceTree = "<group>"; };
+		F16AFBD226DCD97000AF6E45 /* HMToastView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMToastView.h; sourceTree = "<group>"; };
+		F16AFBD326DCD97000AF6E45 /* HMToastView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMToastView.m; sourceTree = "<group>"; };
+		F16AFBDB26DCD98C00AF6E45 /* HMWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMWebView.h; sourceTree = "<group>"; };
+		F16AFBDC26DCD98C00AF6E45 /* HMWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMWebView.m; sourceTree = "<group>"; };
+		F16AFBE126DCD9BA00AF6E45 /* HMConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMConst.h; sourceTree = "<group>"; };
+		F16AFBE226DCD9BA00AF6E45 /* HMConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMConst.m; sourceTree = "<group>"; };
 		F184254026D7668400DD5084 /* HMUncaughtExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		F184254126D7668400DD5084 /* HMUncaughtExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMUncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		F184254B26D766DC00DD5084 /* HMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMNavigationController.h; sourceTree = "<group>"; };
@@ -134,6 +143,8 @@
 		F16AFBBE26DCD22400AF6E45 /* ToastView */ = {
 			isa = PBXGroup;
 			children = (
+				F16AFBD226DCD97000AF6E45 /* HMToastView.h */,
+				F16AFBD326DCD97000AF6E45 /* HMToastView.m */,
 			);
 			path = ToastView;
 			sourceTree = "<group>";
@@ -141,6 +152,8 @@
 		F16AFBC226DCD70200AF6E45 /* Const */ = {
 			isa = PBXGroup;
 			children = (
+				F16AFBE126DCD9BA00AF6E45 /* HMConst.h */,
+				F16AFBE226DCD9BA00AF6E45 /* HMConst.m */,
 			);
 			path = Const;
 			sourceTree = "<group>";
@@ -156,6 +169,8 @@
 		F16AFBD126DCD83000AF6E45 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				F16AFBDB26DCD98C00AF6E45 /* HMWebView.h */,
+				F16AFBDC26DCD98C00AF6E45 /* HMWebView.m */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -481,13 +496,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16AFBE326DCD9BA00AF6E45 /* HMConst.m in Sources */,
 				F186E6D126D4D81C00461757 /* HMKeychainService.m in Sources */,
+				F16AFBDD26DCD98C00AF6E45 /* HMWebView.m in Sources */,
 				F184254226D7668400DD5084 /* HMUncaughtExceptionHandler.m in Sources */,
 				F186E6F026D4D8CB00461757 /* HMDrawBezierPath.m in Sources */,
 				F16AFBBA26DCD21D00AF6E45 /* HMNetworkManager.m in Sources */,
 				F186E6F926D4D94B00461757 /* HMDownloadManager.m in Sources */,
 				F186E6F126D4D8CB00461757 /* HMDrawBoardView.m in Sources */,
 				F186E6C926D4D7C400461757 /* UIImage+HMCategory.m in Sources */,
+				F16AFBD426DCD97000AF6E45 /* HMToastView.m in Sources */,
 				F186E6E426D4D88F00461757 /* HMWaterFlowLayout.m in Sources */,
 				F186E6CA26D4D7C400461757 /* NSString+HMCategory.m in Sources */,
 				F186E68226D4CFAB00461757 /* ViewController.m in Sources */,
