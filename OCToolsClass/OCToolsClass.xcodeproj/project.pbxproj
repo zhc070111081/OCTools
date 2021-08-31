@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F164A07426DDBDA400B47910 /* HMAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F164A07326DDBDA400B47910 /* HMAlertViewController.m */; };
+		F164A07926DDBDB200B47910 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F164A07826DDBDB200B47910 /* Alert.storyboard */; };
 		F16AFBBA26DCD21D00AF6E45 /* HMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AFBB926DCD21D00AF6E45 /* HMNetworkManager.m */; };
 		F16AFBD426DCD97000AF6E45 /* HMToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AFBD326DCD97000AF6E45 /* HMToastView.m */; };
 		F16AFBDD26DCD98C00AF6E45 /* HMWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AFBDC26DCD98C00AF6E45 /* HMWebView.m */; };
@@ -52,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F164A07226DDBDA400B47910 /* HMAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAlertViewController.h; sourceTree = "<group>"; };
+		F164A07326DDBDA400B47910 /* HMAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMAlertViewController.m; sourceTree = "<group>"; };
+		F164A07826DDBDB200B47910 /* Alert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
 		F16AFBB826DCD21D00AF6E45 /* HMNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMNetworkManager.h; sourceTree = "<group>"; };
 		F16AFBB926DCD21D00AF6E45 /* HMNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMNetworkManager.m; sourceTree = "<group>"; };
 		F16AFBCD26DCD73B00AF6E45 /* HMCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMCommonHeader.h; sourceTree = "<group>"; };
@@ -131,6 +136,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F164A06E26DDBAD100B47910 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				F164A07226DDBDA400B47910 /* HMAlertViewController.h */,
+				F164A07326DDBDA400B47910 /* HMAlertViewController.m */,
+				F164A07826DDBDB200B47910 /* Alert.storyboard */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		F16AFBB726DCD1DD00AF6E45 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +269,7 @@
 		F186E6B826D4D25200461757 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F164A06E26DDBAD100B47910 /* Alert */,
 				F16AFBD126DCD83000AF6E45 /* WebView */,
 				F16AFBC326DCD70900AF6E45 /* CommonHeader */,
 				F16AFBC226DCD70200AF6E45 /* Const */,
@@ -472,6 +488,7 @@
 				F186E68A26D4CFB600461757 /* LaunchScreen.storyboard in Resources */,
 				F186E68726D4CFB600461757 /* Assets.xcassets in Resources */,
 				F186E68526D4CFAB00461757 /* Main.storyboard in Resources */,
+				F164A07926DDBDB200B47910 /* Alert.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +521,7 @@
 				F16AFBBA26DCD21D00AF6E45 /* HMNetworkManager.m in Sources */,
 				F186E6F926D4D94B00461757 /* HMDownloadManager.m in Sources */,
 				F186E6F126D4D8CB00461757 /* HMDrawBoardView.m in Sources */,
+				F164A07426DDBDA400B47910 /* HMAlertViewController.m in Sources */,
 				F186E6C926D4D7C400461757 /* UIImage+HMCategory.m in Sources */,
 				F16AFBD426DCD97000AF6E45 /* HMToastView.m in Sources */,
 				F186E6E426D4D88F00461757 /* HMWaterFlowLayout.m in Sources */,
