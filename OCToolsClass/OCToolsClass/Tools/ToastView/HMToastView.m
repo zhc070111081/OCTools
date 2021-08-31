@@ -59,6 +59,11 @@ typedef NS_ENUM(NSInteger, HMToastViewDirection){
     [toast setupContent:content];
     toast.frame = [toast toastViewFrame:content];
     toast.center = view.center;
+//    CGPoint center = toast.center;
+//    center.x = view.center.x;
+//    toast.center = center;
+//    toast.transform = CGAffineTransformMakeTranslation(0, -(toast.frame.size.height + 10));
+    
     
     // 显示视图
     [toast showToast:defaultDuration];
@@ -123,6 +128,13 @@ typedef NS_ENUM(NSInteger, HMToastViewDirection){
         } completion:^(BOOL finished) {
             [self performSelector:@selector(hideToast) withObject:self afterDelay:defaultDuration];
         }];
+//        self.alpha = 1.0;
+//        [UIView animateWithDuration:defaultDelay animations:^{
+//            self.transform = CGAffineTransformIdentity;
+//        } completion:^(BOOL finished) {
+//            [self performSelector:@selector(hideToast) withObject:self afterDelay:defaultDuration];
+//        }];
+        
     });
 }
 
