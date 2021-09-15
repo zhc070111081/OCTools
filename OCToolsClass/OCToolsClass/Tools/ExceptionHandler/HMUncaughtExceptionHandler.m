@@ -280,7 +280,7 @@ void SignalHandler (int signal){
     [[HMUncaughtExceptionHandler defaultExceptionHandler] performSelectorOnMainThread:@selector(handleException:) withObject: [NSException exceptionWithName:UncaughtExceptionHandlerSignalExceptionName reason: [NSString stringWithFormat: NSLocalizedString(@"Signal %d was raised.", nil), signal] userInfo: [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:signal] forKey:UncaughtExceptionHandlerSignalKey]] waitUntilDone:YES];
 }
 
-HMUncaughtExceptionHandler *InstanceHMUncaughtExceptionHandler(void){
+HMUncaughtExceptionHandler *InstanceUncaughtExceptionHandler(void){
     NSSetUncaughtExceptionHandler(&HandleException);
     signal(SIGABRT, SignalHandler);
     signal(SIGILL, SignalHandler);

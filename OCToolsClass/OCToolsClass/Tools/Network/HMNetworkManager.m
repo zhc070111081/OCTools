@@ -7,7 +7,7 @@
 
 #import "HMNetworkManager.h"
 
-static NSTimeInterval const TIMEOUT = 15.0;
+//static NSTimeInterval const TIMEOUT = 15.0;
 
 static HMNetworkManager *_network = nil;
 

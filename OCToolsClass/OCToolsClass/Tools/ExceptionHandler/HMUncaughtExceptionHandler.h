@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 //错误日志路径
 @property (nullable, nonatomic,copy) NSString *crashFilePath;
 
-HMUncaughtExceptionHandler * InstanceHMUncaughtExceptionHandler(void);
+HMUncaughtExceptionHandler * InstanceUncaughtExceptionHandler(void);
 
 @end
 
