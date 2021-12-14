@@ -101,3 +101,96 @@
 }
 
 @end
+
+
+@implementation UIImage (QRCode)
+
++ (UIImage *)createQRCodeWithUrlString:(NSString *)urlString {
+    if (!urlString) return nil;
+    
+    // 1. 实例化二维码滤镜
+    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+     
+    // 2. 恢复滤镜的默认设置(因为滤镜有可能保存上一次的属性)
+    [filter setDefaults];
+    
+    // 3. 通过KVO设置滤镜, 传入data, 将来滤镜就知道要通过传入的数据生成二维码
+    NSData *data = [urlString dataUsingEncoding:NSUTF8StringEncoding];
+    [filter setValue:data forKeyPath:@"inputMessage"];
+    
+    // 4. 输出二维码图片
+    CIImage *outputImage = [filter outputImage];
+    
+    return [UIImage imageWithCIImage:outputImage];
+}
+
++ (UIImage *)createQRCodeWithUrlString:(NSString *)urlString size:(CGFloat)size {
+    
+    if (!urlString) return nil;
+    
+    // 1. 实例化二维码滤镜
+    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+     
+    // 2. 恢复滤镜的默认设置(因为滤镜有可能保存上一次的属性)
+    [filter setDefaults];
+    
+    // 3. 通过KVO设置滤镜, 传入data, 将来滤镜就知道要通过传入的数据生成二维码
+    NSData *data = [urlString dataUsingEncoding:NSUTF8StringEncoding];
+    [filter setValue:data forKeyPath:@"inputMessage"];
+    
+    // 4. 输出二维码图片
+    CIImage *outputImage = [filter outputImage];
+    
+    CGRect extent = CGRectIntegral(outputImage.extent);
+    CGFloat scale = MIN(size/CGRectGetWidth(extent), size/CGRectGetHeight(extent));
+    
+    // 1.创建bitmap;
+    size_t width = CGRectGetWidth(extent) * scale;
+    size_t height = CGRectGetHeight(extent) * scale;
+    CGColorSpaceRef cs = CGColorSpaceCreateDeviceGray();
+    CGContextRef bitmapRef = CGBitmapContextCreate(nil, width, height, 8, 0, cs, (CGBitmapInfo)kCGImageAlphaNone);
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CGImageRef bitmapImage = [context createCGImage:outputImage fromRect:extent];
+    CGContextSetInterpolationQuality(bitmapRef, kCGInterpolationNone);
+    CGContextScaleCTM(bitmapRef, scale, scale);
+    CGContextDrawImage(bitmapRef, extent, bitmapImage);
+    
+    // 2.保存bitmap到图片
+    CGImageRef scaledImage = CGBitmapContextCreateImage(bitmapRef);
+    CGContextRelease(bitmapRef);
+    CGImageRelease(bitmapImage);
+    return [UIImage imageWithCGImage:scaledImage];
+}
+
++ (UIImage *)createQRCodeWithUrlString:(NSString *)urlString size:(CGFloat)size imageName:(NSString *)imageName {
+    
+    UIImage *outputImage = [self createQRCodeWithUrlString:urlString size:size];
+    
+    CGSize imageSize = outputImage.size;
+    
+    UIImage *image = [UIImage imageNamed:imageName];
+    
+    // 开启图形上下文
+    UIGraphicsBeginImageContext(outputImage.size);
+    
+    [outputImage drawInRect:CGRectMake(0, 0, imageSize.width, imageSize.height)];
+    
+    CGFloat centerW = imageSize.width * 0.25;
+    
+    CGFloat centerH = centerW;
+    
+    CGFloat centerX=(imageSize.width-centerW)*0.5;
+    
+    CGFloat centerY=(imageSize.height-centerH)*0.5;
+    
+    [image drawInRect:CGRectMake(centerX, centerY, centerW, centerH)];
+    
+    //5.3获取绘制好的图片
+    UIImage *finalImg = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return finalImg;
+}
+
+@end

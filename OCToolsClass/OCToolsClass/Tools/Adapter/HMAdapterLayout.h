@@ -30,10 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return YES or NO
 + (BOOL)iPhone;
 
-/// 获取当前设备名称
-/// iPhone 2G ~ iPhone 12
-+ (nullable NSString *)currentDeviceModelName;
-
 #pragma mark - frame
 
 /// 获取UIScreen 的 宽度
@@ -73,6 +69,36 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return windowScene
 + (UIWindowScene * _Nullable)windowScene API_AVAILABLE(ios(13.0));
 
+#pragma mark - 设备相关信息
+
+/**!
+ 设备名称 e.g. "My iPhone"
+ */
++ (nullable NSString *)deviceName;
+
+/**!
+ 系统名称 e.g. @"iOS"
+ */
++ (nullable NSString *)systemName;
+
+/**!
+ 系统版本  e.g. @"4.0"
+ */
++ (nullable NSString *)systemVersion;
+
+/**!
+ 设备模式 e.g. @"iPhone", @"iPod touch"
+ */
++ (nullable NSString *)deviceModel;
+
+/**!
+ 本地设备模式 localized version of model
+ */
++ (nullable NSString *)localizedModel;
+
+/// 当前设备模式名称
+/// iPhone 2G ~ iPhone 12
++ (nullable NSString *)deviceModelName;
 
 #pragma mark - 方向
 

@@ -36,4 +36,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface UIImage (QRCode)
+
+/*!
+ 生成二维码
+ @param urlString 需要生成的二维码内容
+ */
++ (nullable UIImage *)createQRCodeWithUrlString:(nullable NSString *)urlString;
+
+/*!
+ 生成高清的二维码
+ @param urlString 需要生成的二维码内容
+ @param size 需要生成二维码的尺寸
+ */
++ (nullable UIImage *)createQRCodeWithUrlString:(nullable NSString *)urlString size:(CGFloat)size;
+
+/*!
+ 生成带logo的二维码
+ @param urlString 需要生成的二维码内容
+ @param size 需要生成二维码的尺寸
+ @param imageName log0名称
+ */
++ (nullable UIImage *)createQRCodeWithUrlString:(nullable NSString *)urlString size:(CGFloat)size imageName:(nullable NSString *)imageName;
+
+@end
+
 NS_ASSUME_NONNULL_END

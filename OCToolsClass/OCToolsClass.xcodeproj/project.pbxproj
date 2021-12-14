@@ -34,6 +34,7 @@
 		F186E6F126D4D8CB00461757 /* HMDrawBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6EC26D4D8CB00461757 /* HMDrawBoardView.m */; };
 		F186E6F226D4D8CB00461757 /* HMLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6EF26D4D8CB00461757 /* HMLockView.m */; };
 		F186E6F926D4D94B00461757 /* HMDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F186E6F826D4D94B00461757 /* HMDownloadManager.m */; };
+		F1D5BC1426F2F49E0056FF0C /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D5BC1326F2F49E0056FF0C /* NSObject+Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,8 @@
 		F186E6EF26D4D8CB00461757 /* HMLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLockView.m; sourceTree = "<group>"; };
 		F186E6F726D4D94B00461757 /* HMDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMDownloadManager.h; sourceTree = "<group>"; };
 		F186E6F826D4D94B00461757 /* HMDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMDownloadManager.m; sourceTree = "<group>"; };
+		F1D5BC1226F2F49E0056FF0C /* NSObject+Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
+		F1D5BC1326F2F49E0056FF0C /* NSObject+Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,8 +314,10 @@
 			children = (
 				F186E6C526D4D7C400461757 /* NSString+HMCategory.h */,
 				F186E6C826D4D7C400461757 /* NSString+HMCategory.m */,
-				F186E6C726D4D7C400461757 /* UIImage+HMCategory.m */,
 				F186E6C626D4D7C400461757 /* UIImage+HMCategory.h */,
+				F186E6C726D4D7C400461757 /* UIImage+HMCategory.m */,
+				F1D5BC1226F2F49E0056FF0C /* NSObject+Model.h */,
+				F1D5BC1326F2F49E0056FF0C /* NSObject+Model.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16AFBE326DCD9BA00AF6E45 /* HMConst.m in Sources */,
+				F1D5BC1426F2F49E0056FF0C /* NSObject+Model.m in Sources */,
 				F186E6D126D4D81C00461757 /* HMKeychainService.m in Sources */,
 				F16AFBDD26DCD98C00AF6E45 /* HMWebView.m in Sources */,
 				F184254226D7668400DD5084 /* HMUncaughtExceptionHandler.m in Sources */,

@@ -33,7 +33,8 @@
         (__bridge id)kSecClass          : (__bridge id)kSecClassGenericPassword,
         (__bridge id)kSecAttrService    : [NSBundle mainBundle].bundleIdentifier,
         (__bridge id)kSecAttrAccount    : identifier,
-        (__bridge id)kSecAttrAccessible : (__bridge id)kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
+        (__bridge id)kSecAttrAccessible : (__bridge id)kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly,
+        (__bridge id)kSecAttrSynchronizable : (__bridge id)kCFBooleanFalse // 不同步到iCloud
     } mutableCopy];
 }
 
