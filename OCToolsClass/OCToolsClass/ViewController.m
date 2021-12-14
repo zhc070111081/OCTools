@@ -111,13 +111,6 @@
 //    } complete:^(HMDownloadSource * _Nullable source, NSError * _Nullable error) {
 //        NSLog(@"error: %@",error);
 //    }];
-    
-    //
-//    [[HMDownloadManager defaultManager] downloadWithUrl:@"https://www.apple.com/105/media/cn/mac/family/2018/46c4b917_abfd_45a3_9b51_4e3054191797/films/bruce/mac-bruce-tpl-cn-2018_1280x720h.mp4" allHTTPHeaderFields:nil progress:^(HMDownloadSource * _Nullable source) {
-//        NSLog(@"接收下载数据111111  currentSize: %lld ----> totoaSize: %lld",source.totalBytesWritten, source.totalBytesExpectedToWrite);
-//    } complete:^(HMDownloadSource * _Nullable source, NSError * _Nullable error) {
-//        NSLog(@"error1111111: %@",error);
-//    }];
 }
 
 
